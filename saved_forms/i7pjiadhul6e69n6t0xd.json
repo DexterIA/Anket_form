@@ -1,0 +1,21 @@
+{
+  "sex": "Женский",
+  "firstname": "sdfgsdg",
+  "lastname": "sdjfgksd;f",
+  "child": true,
+  "married": false,
+  "language": "ru",
+  "children": [
+    {
+      "lastname": "sdfgsdfg",
+      "firstname": "sdfgsdfg",
+      "middlename": "sdfgsdfgsd"
+    },
+    {
+      "lastname": "sdfsdfgsdg",
+      "firstname": "sdfgsdfgsdf",
+      "middlename": "sdfgsdgsd"
+    }
+  ],
+  "middlename": "sdfgsdgsdf"
+}
