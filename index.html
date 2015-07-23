@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-translate/angular-translate.min.js"></script>
-<script src="js/myUsers.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="js/myUsers.js"></script>
 <body ng-app="myApp" ng-controller="userCtrl">
 <div class="container">
     <div class="col-md-10 panel panel-default col-md-offset-1">
@@ -48,7 +48,8 @@
             <!--Возраст -->
             <div class="form-group col-md-12" ng-show="result.sex == '1'">
                 <label class="col-md-offset-0 control-label" for="age" translate="">AGE</label>:
-                <input class="col-md-offset-1" id="age" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="result.age"/>
+                <input class="col-md-offset-1" id="age" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                       ng-model="result.age"/>
             </div>
 
             <!-- Пол, замужем/женат, с детьми -->
@@ -65,7 +66,8 @@
                 </div>
 
                 <div class="form-group col-md-2">
-                    <label><input type="checkbox" id="children" ng-model="result.child"/> <span translate>HASCHILDREN</span></label>
+                    <label><input type="checkbox" id="children" ng-model="result.child"/> <span
+                            translate>HASCHILDREN</span></label>
                 </div>
             </div>
 
@@ -93,23 +95,21 @@
                     <div class="form-group col-md-3">
                         <label for="newlastname" translate="">LASTNAME</label>:
                         <input id="newlastname" ng-model="newChild.lastname"/>
-                        <span class="help-block" ng-show="newChild.lastname==''" translate="">REQUIRED</span>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="newfirstname" translate="">FIRSTNAME</label>:
                         <input id="newfirstname" ng-model="newChild.firstname"/>
-                        <span class="help-block" ng-show="newChild.firstname" translate="">REQUIRED</span>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="newmiddlename" translate="">MIDDLENAME</label>:
                         <input id="newmiddlename" ng-model="newChild.middlename"/>
-                        <span class="help-block" ng-show="newChild.middlename" translate="">REQUIRED</span>
                     </div>
                 </div>
                 <button class="btn btn-danger form-control" ng-click="addChild()" translate="">ADDCHILD</button>
             </div>
             <div class="form-group col-md-12">
-                <button id="submit" class="center-block btn btn-primary" ng-click="save_result()" translate="">SAVE</button>
+                <button id="submit" class="center-block btn btn-primary" ng-click="save_result()" translate="">SAVE
+                </button>
             </div>
         </form>
     </div>
